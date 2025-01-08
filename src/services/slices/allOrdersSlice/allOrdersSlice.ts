@@ -1,11 +1,11 @@
-import { getOrdersApi } from '@api';
+import { getOrdersApi } from '../../../utils/burger-api';
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
 import { IAllOrdersState } from './allOrdersSlice.typings';
 
 export const getOrdersThunk = createAsyncThunk(
   `allOrders/getOrders`,
-  async () => getOrdersApi()
+  getOrdersApi
 );
 
 export const initialState: IAllOrdersState = {

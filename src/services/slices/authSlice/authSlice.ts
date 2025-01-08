@@ -7,9 +7,8 @@ import {
   loginUserApi,
   logoutApi,
   TUserResponse
-} from '@api';
+} from '../../../utils/burger-api';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { TUser } from '@utils-types';
 import { IAuthState } from './authSlice.typings';
 
 export const checkedUserAuthThunk = createAsyncThunk(

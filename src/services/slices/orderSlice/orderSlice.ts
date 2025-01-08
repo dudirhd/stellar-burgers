@@ -3,7 +3,7 @@ import {
   orderBurgerApi,
   TNewOrderResponse,
   TOrderResponse
-} from '@api';
+} from '../../../utils/burger-api';
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { resetConstructor } from '../constructorSlice/constructorSlice';
 import { IOrderState } from './orderSlice.typings';
